@@ -1,0 +1,112 @@
+
+/* ==========================================================================
+   Brighton
+   ========================================================================== */
+
+
+
+
+/* Style
+   ========================================================================== */
+.page-title,
+.main-promo-article__title,
+.view-gallery__title { 
+  font-family:"A2 Beckett Light", Arial, sans-serif; 
+  font-weight:200; 
+  font-style:normal;
+  letter-spacing: 2px;
+} 
+
+.page-title--main-banner { 
+  @include font-size(5); 
+  letter-spacing: 8px;
+}
+
+@include min-screen(19.8125em) {
+  .page-title--main-banner {
+    @include font-size(8.6); 
+  }
+}
+
+
+.external-container { border-top-color: $red; }
+body { background-image: url('../images/ar-brighton-background.gif'); }
+
+.ul-top-nav a {
+	&:hover,
+	&:focus { color: $red; }
+}
+
+.ul-top-nav li:last-child { 
+  //background-color: $red;
+  background-image: url('../images/brighton-pattern.gif'); 
+}
+
+.m-book-online { background-color: $red; }
+.m-book-online-link {
+  color: $red;
+  background-color: $bgcolor;
+}
+
+.ul-top-nav li:last-child a { 
+  color: $red;
+  background-color: $bgcolor;
+}
+
+a:hover,
+a:focus,
+a:active,
+.current_page_item a { color: $red; }
+
+h1, .h1 { color: $red; }
+
+
+.square-text__type { color: $red; }
+
+
+.btn-skin-link-color,
+.g-map__btn { 
+  color: $red;
+  border-color: $red;
+
+}
+
+.btn-skin-link-color:active,
+.btn-skin-link-color:focus,
+.btn-skin-link-color:hover,
+.g-map__btn:active,
+.g-map__btn:focus,
+.g-map__btn:hover { 
+  color: $bgcolor;
+  background-color: $red; 
+}
+
+.view-gallery {
+  color: $red;
+  border-color: $red;
+}
+
+.media-obj-body__title {
+  color: $html-text-color;
+}
+
+.main-navigation .current-menu-item.menu-item:last-child a {
+  color: $bgcolor;
+  background-color: $red; 
+}
+
+@include min-screen(64em) {
+  .cell--promo-bkg {
+    background: url('../images/brighton-building.png') no-repeat 100% 80%;  
+  }
+}
+
+
+.main-promo-article { border-color: $red; }
+.main-promo-article__title { color: $red; }
+
+@include min-screen(81.25em) {
+  .ul-top-nav a {
+    @include font-size(1.4); 
+  }
+}
